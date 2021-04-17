@@ -1,0 +1,56 @@
+# This file is maintained automatically by "terraform init".
+# Manual edits may be lost in future updates.
+
+provider "registry.terraform.io/hashicorp/aws" {
+  version = "3.35.0"
+  hashes = [
+    "h1:xOkRDvfIw457egXTu+4LAl7Kog31KKx339t8N+7TgPU=",
+    "zh:0b7cf15369fe940190f2e3fd77300119a16a9b821a7b15e049a6e349126b833d",
+    "zh:65680b35a45df6dc9ebe4439aa28dbe5767f8745443d0807656759d81ed23f5d",
+    "zh:75a71517d40b842308bc7a13a8dadcade99de3344292318b28a3ad95f09994e7",
+    "zh:865e618aa41f4a3842e818f6389f4aac89a985b409d1bb108ac753ea6292215d",
+    "zh:893658f93e57ea6c2bb458cdcf7d51e617147f53a9b2ed7741689bec3cfca4f9",
+    "zh:89d63eab0ad7fe3a891e6567052dd3227520ae48c212465d3a2b0bed326b319d",
+    "zh:94a408adcc52ce1758ecc2aad8394c35254029d18f358392b86602705a688b3d",
+    "zh:a82d09d03cb5480b3b4f318d1db3a64d80a701a429f3a84520e4a26f66b9a178",
+    "zh:aee92e745c43de2cc30913bddd8e625a8c6511f900f8e4104a0ccb746f276428",
+    "zh:b1178f4c2db30d7e49c3af441f79ac932bb5b8a8f05b0d770515b732ad4ac388",
+    "zh:b2684d0124ed6c394c83005def7387a6f8c9ac5f459dd7fc2fe56ea1aa97b20c",
+  ]
+}
+
+provider "registry.terraform.io/hashicorp/http" {
+  version = "2.1.0"
+  hashes = [
+    "h1:GYoVrTtiSAE3AlP1fad3fFmHoPaXAPhm/DJyMcVCwZA=",
+    "zh:03d82dc0887d755b8406697b1d27506bc9f86f93b3e9b4d26e0679d96b802826",
+    "zh:0704d02926393ddc0cfad0b87c3d51eafeeae5f9e27cc71e193c141079244a22",
+    "zh:095ea350ea94973e043dad2394f10bca4a4bf41be775ba59d19961d39141d150",
+    "zh:0b71ac44e87d6964ace82979fc3cbb09eb876ed8f954449481bcaa969ba29cb7",
+    "zh:0e255a170db598bd1142c396cefc59712ad6d4e1b0e08a840356a371e7b73bc4",
+    "zh:67c8091cfad226218c472c04881edf236db8f2dc149dc5ada878a1cd3c1de171",
+    "zh:75df05e25d14b5101d4bc6624ac4a01bb17af0263c9e8a740e739f8938b86ee3",
+    "zh:b4e36b2c4f33fdc44bf55fa1c9bb6864b5b77822f444bd56f0be7e9476674d0e",
+    "zh:b9b36b01d2ec4771838743517bc5f24ea27976634987c6d5529ac4223e44365d",
+    "zh:ca264a916e42e221fddb98d640148b12e42116046454b39ede99a77fc52f59f4",
+    "zh:fe373b2fb2cc94777a91ecd7ac5372e699748c455f44f6ea27e494de9e5e6f92",
+  ]
+}
+
+provider "registry.terraform.io/paloaltonetworks/panos" {
+  version = "1.8.1"
+  hashes = [
+    "h1:TJxQEctvnpbHTT0IPQ0FPN/UsFglYS9NZKQ1qkZgPkE=",
+    "zh:2ca043a063bf04022f9b6f2a6a15f98178b9b39d6a55b129d8aa505a0a6649c2",
+    "zh:386a2fc3182336a51647c34328dd033ba36742fefcc48ef7d585ab58303ec56b",
+    "zh:533a13bffd26ba042a4a1264bd96edfdd68bbe8b85317ed011ac431d0ab53e90",
+    "zh:55d8d37189ca080c27d32505257af050498055af55ed3bfcb69e78e2616848f3",
+    "zh:a0ec4ae5103f561fefd8e95854810678da82fa5cde43d01c3177a590bbcb5de6",
+    "zh:c1b824f46f2a8ef9327c6df5088505e61c17cca3dc31983a7c34eaa7fab37872",
+    "zh:cea6f5edac3524d5fea620e95eb4218c239211a227d3e2a9276e4fc038160c50",
+    "zh:e03c05eaf8629d56d60dccdfb49b143214607579621e4939ee62e693d58309ba",
+    "zh:e0debd0922c25615e65db7ed28a3fd8abdb8814f7056b6ad71e45214fe4ec63f",
+    "zh:e256f318cf724ac2f238aac6982d62c4d6ac11cdc88ea21019ccd932f130f7d1",
+    "zh:fa751d0bf5b1de7ca237cca8fa554cf98e39433ab74f356ce11744ffee07a3b0",
+  ]
+}
