@@ -11,9 +11,9 @@ pipeline {
         }
         stage('Terraform Init') {
             steps{
-                dir("./paloalto-deploy"){
-                    sh 'terraform init'
-                }
+                sh 'ls -la'
+                sh 'terraform init'
+                
             }
         }
         stage('Terrform Apply') {
