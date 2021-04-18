@@ -37,6 +37,41 @@ provider "registry.terraform.io/hashicorp/http" {
   ]
 }
 
+provider "registry.terraform.io/hashicorp/null" {
+  version = "3.1.0"
+  hashes = [
+    "h1:xhbHC6in3nQryvTQBWKxebi3inG5OCgHgc4fRxL0ymc=",
+    "zh:02a1675fd8de126a00460942aaae242e65ca3380b5bb192e8773ef3da9073fd2",
+    "zh:53e30545ff8926a8e30ad30648991ca8b93b6fa496272cd23b26763c8ee84515",
+    "zh:5f9200bf708913621d0f6514179d89700e9aa3097c77dac730e8ba6e5901d521",
+    "zh:9ebf4d9704faba06b3ec7242c773c0fbfe12d62db7d00356d4f55385fc69bfb2",
+    "zh:a6576c81adc70326e4e1c999c04ad9ca37113a6e925aefab4765e5a5198efa7e",
+    "zh:a8a42d13346347aff6c63a37cda9b2c6aa5cc384a55b2fe6d6adfa390e609c53",
+    "zh:c797744d08a5307d50210e0454f91ca4d1c7621c68740441cf4579390452321d",
+    "zh:cecb6a304046df34c11229f20a80b24b1603960b794d68361a67c5efe58e62b8",
+    "zh:e1371aa1e502000d9974cfaff5be4cfa02f47b17400005a16f14d2ef30dc2a70",
+    "zh:fc39cc1fe71234a0b0369d5c5c7f876c71b956d23d7d6f518289737a001ba69b",
+    "zh:fea4227271ebf7d9e2b61b89ce2328c7262acd9fd190e1fd6d15a591abfa848e",
+  ]
+}
+
+provider "registry.terraform.io/hashicorp/time" {
+  version = "0.7.0"
+  hashes = [
+    "h1:HNWZJt2ZyD8dRnzZU0RNmqFA9JAMU6/vt2bjUUCwkIA=",
+    "zh:1f53008d9d445ac56da84eb548fc2354fe1b120703d788bf47f460e4aec18b85",
+    "zh:327c26cec73e7aa4bc0bb156c1a10f3f053d8f8af35c4b9e59ccb371e82dfed5",
+    "zh:38beff8856deb579251889192b49f29d674e24c605070a0bf6c694c8664e9d02",
+    "zh:56aee9534d32a1cbeee76920bc0a19d85dc51454f26a6ef5ec9db6598748001e",
+    "zh:79b96a8cd365ab1ec4d11f2f816fb07c67cfb50d337d8f9fac06b56c6c325f73",
+    "zh:7fd11d98b9547c04365ff85d8f9d27a294a14d0e16683a4927810963ad6172a4",
+    "zh:85f6ebf6dab5333158549123d92aec89c6c617673e0fd50b5e999c24e8973e44",
+    "zh:a26fd2c3eecbec7d6549e33fac80d4a1498f4ac5b8089c1a1632b97708230103",
+    "zh:a597d56f6765f493855e50542cba96b46b80104b918ec89f05195e5c3f7e6db0",
+    "zh:ef6ab738eb260de05e3d67a442cbe5c988189fcf26c976864888e3100e6a8d09",
+  ]
+}
+
 provider "registry.terraform.io/paloaltonetworks/panos" {
   version = "1.8.1"
   hashes = [

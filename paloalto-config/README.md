@@ -1,2 +1,0 @@
-# aws-terraform
-AWS Infrastructure 
