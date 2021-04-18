@@ -3,9 +3,3 @@ variable "pa-ami" {
   type        = string
   default     = "ami-038af5364fe2df682"
 }
-
-variable "LAN_ZONE" {
-  description = "LAN Zone:"
-  type        = list(string)
-  default     = ["LAN"]
-}
