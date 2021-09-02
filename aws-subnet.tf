@@ -38,7 +38,7 @@ resource "aws_subnet" "subnet_security_wan" {
 
 resource "aws_subnet" "subnet_resources" {
   vpc_id     = aws_vpc.vpc_resources.id
-  cidr_block = aws_vpc.vpc_resources.cidr_block
+  cidr_block = "172.30.0.0/24"
   availability_zone= "us-east-1b"
 
   tags = {

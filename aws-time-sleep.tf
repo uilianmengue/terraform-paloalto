@@ -1,6 +1,6 @@
-resource "time_sleep" "wait_paloalto_start" {
+/*resource "time_sleep" "wait_paloalto_start" {
   depends_on = [aws_instance.fw_01]
-  create_duration = "1100s"
+  create_duration = "900s"
 }
 
 resource "null_resource" "next_start" {
@@ -13,4 +13,4 @@ resource "null_resource" "next_start" {
     }
   }
   depends_on = [time_sleep.wait_paloalto_start]
-}
+}*/

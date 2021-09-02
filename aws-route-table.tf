@@ -6,6 +6,10 @@ resource "aws_route_table" "rt-pa-mgn" {
     gateway_id = aws_internet_gateway.ig-security.id
   }
 
+  tags = {
+    Name = "rt-pa-mgn"
+  }
+
   depends_on = [
       aws_vpc.vpc_pa
   ]
@@ -26,8 +30,12 @@ resource "aws_route_table" "rt-pa-lan" {
     network_interface_id = aws_network_interface.eni-pa-lan.id
   }
   route {
-    cidr_block = "172.30.0.0/16"
+    cidr_block = "172.30.0.0/24"
     vpc_peering_connection_id = aws_vpc_peering_connection.pc-pa-resoure.id
+  }
+
+  tags = {
+    Name = "rt-pa-lan"
   }
 
   depends_on = [
@@ -52,6 +60,10 @@ resource "aws_route_table" "rt-pa-wan" {
     gateway_id = aws_internet_gateway.ig-security.id
   }
 
+  tags = {
+    Name = "rt-pa-wan"
+  }
+
   depends_on = [
       aws_vpc.vpc_pa
   ]
@@ -74,6 +86,10 @@ resource "aws_route_table" "rt-resources" {
     vpc_peering_connection_id = aws_vpc_peering_connection.pc-pa-resoure.id
   }
 
+  tags = {
+    Name = "rt-resources"
+  }
+
   depends_on = [
       aws_vpc.vpc_resources
   ]
@@ -90,6 +106,15 @@ resource "aws_route_table_association" "rt-resources" {
 resource "aws_route_table" "rt-main-security" {
   vpc_id = aws_vpc.vpc_pa.id
 
+  route {
+    cidr_block = "172.30.0.0/24"
+    vpc_peering_connection_id = aws_vpc_peering_connection.pc-pa-resoure.id
+  }
+
+  tags = {
+    Name = "rt-main-security"
+  }
+
   depends_on = [
       aws_vpc.vpc_pa
   ]
@@ -97,6 +122,15 @@ resource "aws_route_table" "rt-main-security" {
 
 resource "aws_route_table" "rt-main-resources" {
   vpc_id = aws_vpc.vpc_resources.id
+
+  route {
+    cidr_block = "0.0.0.0/0"
+    vpc_peering_connection_id = aws_vpc_peering_connection.pc-pa-resoure.id
+  }
+
+  tags = {
+    Name = "rt-main-resources"
+  }
 
   depends_on = [
       aws_vpc.vpc_resources

@@ -12,6 +12,8 @@ resource "aws_network_interface" "eni-pa-management" {
 resource "aws_network_interface" "eni-pa-lan" {
   subnet_id   = aws_subnet.subnet_security_lan.id
   security_groups = [aws_security_group.sg-pa-interfaces.id]
+  source_dest_check = false
+  private_ips = ["172.20.1.10"]
   tags = {
     Name = "PA_Lan_Interface"
   }
@@ -24,6 +26,8 @@ resource "aws_network_interface" "eni-pa-lan" {
 resource "aws_network_interface" "eni-pa-wan" {
   subnet_id   = aws_subnet.subnet_security_wan.id
   security_groups = [aws_security_group.sg-pa-interfaces.id]
+  source_dest_check = false
+  private_ips = ["172.20.2.11", "172.20.2.10"]
   tags = {
     Name = "PA_Wan_Interface"
   }

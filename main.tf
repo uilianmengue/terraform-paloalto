@@ -1,13 +1,13 @@
 # Configure the AWS Providers
 provider "aws" {
   region = "us-east-1" # CloudFront expects ACM resources in us-east-1 region only
-  access_key = "AKIAUCXM3GXYJWAIK5U4"
-  secret_key = "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"
+  access_key = var.AWS_KEY
+  secret_key = var.AWS_SECRET
 }
 
-resource "aws_instance" "fw_01" {
+/*resource "aws_instance" "fw_01" {
   ami           = var.pa-ami
-  instance_type = "m4.large"
+  instance_type = "m4.xlarge"
   availability_zone = aws_subnet.subnet_security_mgm.availability_zone
   key_name      = "AWS_personal"
 
@@ -37,9 +37,10 @@ resource "aws_instance" "fw_01" {
       aws_subnet.subnet_security_lan,
       aws_subnet.subnet_security_wan,
       aws_eip.eip-pa-mgm,
-      aws_eip.eip-pa-wan
+      aws_eip.eip-pa-wan-one,
+      aws_eip.eip-pa-wan-two
   ]
-}
+}*/
 
 resource "aws_instance" "web_server" {
   ami           = var.web-server-ami
@@ -62,5 +63,3 @@ resource "aws_instance" "web_server" {
       aws_security_group.sg-web-server
   ]
 }
-
-
