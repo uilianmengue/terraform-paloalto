@@ -57,9 +57,9 @@ resource "aws_instance" "web_server" {
       delete_on_termination = true
   }
   depends_on = [
-      aws_network_interface.ws_interface,
-      aws_vpc.vpc_resources,
-      aws_subnet.subnet_resources,
+      #aws_network_interface.ws_interface,
+      #aws_vpc.vpc_resources,
+      #aws_subnet.subnet_resources,
       aws_security_group.sg-web-server
   ]
 }
